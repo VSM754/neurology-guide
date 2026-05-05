@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
 }
 
-/* ✅ STICKY NAV */
+/* NAV */
 nav {
     position: sticky;
     top: 0;
@@ -26,7 +26,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     color: white;
-    font-size: 16px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
@@ -58,7 +57,6 @@ nav a {
     border-radius: 10px;
     min-width: 240px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    overflow: hidden;
 }
 
 .dropdown-content a {
@@ -83,27 +81,25 @@ header {
 
 header h1 {
     color: #ff6f91;
-    font-size: 30px;
     margin: 0;
 }
 
 header p {
     color: #6e6e73;
-    margin-top: 10px;
 }
 
 /* CONTENT */
 .content {
     max-width: 950px;
     margin: auto;
-    padding: 10px 20px 40px;
+    padding: 20px;
 }
 
-h2, h3 {
+h2 {
     color: #ff6f91;
 }
 
-/* ✅ MODERN TABLE */
+/* TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -116,12 +112,11 @@ table {
 th {
     background: #ffe3ea;
     color: #ff6f91;
-    padding: 12px;
-    text-align: left;
+    padding: 10px;
 }
 
 td {
-    padding: 12px;
+    padding: 10px;
     border-top: 1px solid #eee;
 }
 
@@ -132,45 +127,31 @@ footer {
     padding: 25px;
     text-align: center;
     margin-top: 40px;
-    border-radius: 20px 20px 0 0;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-    nav {
-        padding: 12px 20px;
-    }
 }
 </style>
 
-manifest.json
+<link rel="manifest" href="manifest.json">
 </head>
 
 <body>
 
 <!-- NAV -->
 <nav>
-    index.htmlHome</a>
+    <a href="index.html">Home</a>
 
     <div class="dropdown">
         <button class="dropbtn">Chapters ▼</button>
         <div class="dropdown-content">
-            high-school.htmlHigh School Plan</a>
-            timeline.htmlTimeline</a>
-            immigration-comparison.htmlGreen Card vs No Green Card</a>
-            immigration-education.htmlEducation Impact</a>
-            eamcet-registration.htmlEAMCET</a>
-            neet-registration.htmlNEET</a>
-            eamcet-vs-neet.htmlEAMCET vs NEET</a>
-            us-premed-vs-mbbs.htmlU.S. vs MBBS</a>
-            mbbs-to-usa-neurology.htmlMBBS → USA</a>
-            resources.htmlResources</a>
+            <a href="high-school.html">High School Plan</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="immigration-comparison.html">Green Card vs No Green Card</a>
+            <a href="immigration-education.html">Education Impact</a>
+            <a href="eamcet-registration.html">EAMCET</a>
+            <a href="neet-registration.html">NEET</a>
+            <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
+            <a href="us-premed-vs-mbbs.html">U.S. vs MBBS</a>
+            <a href="mbbs-to-usa-neurology.html">MBBS → USA</a>
+            <a href="resources.html">Resources</a>
         </div>
     </div>
 </nav>
@@ -185,123 +166,51 @@ manifest.json
 <div class="content">
 
 <h2>Executive Summary</h2>
-<p>
-Immigration status significantly impacts tuition costs, financial aid, and access to medical schools.
-A green card simplifies the path to a neurology career.
-</p>
+<p>Immigration status significantly impacts tuition and medical career access.</p>
 
-<h2>High School Impact</h2>
+<h2>High School</h2>
 <ul>
-<li>No difference in school access</li>
-<li>Same academic and extracurricular opportunities</li>
+<li>No difference in access</li>
+<li>Same opportunities</li>
 </ul>
 
-<h2>College Admissions</h2>
+<h2>College</h2>
 
-<h3>With Green Card</h3>
+<h3>Green Card</h3>
 <ul>
-<li>Domestic student status</li>
-<li>Lower tuition (possible in-state)</li>
-<li>Eligible for financial aid</li>
-<li>More scholarships</li>
+<li>Domestic student</li>
+<li>Lower tuition</li>
+<li>More aid</li>
 </ul>
 
-<h3>Without Green Card</h3>
+<h3>No Green Card</h3>
 <ul>
-<li>International status</li>
+<li>International student</li>
 <li>Higher tuition</li>
 <li>Limited aid</li>
-<li>Fewer scholarships</li>
 </ul>
 
-<h2>Tuition Comparison</h2>
+<h2>Tuition</h2>
 <table>
-<tr>
-<th>Type</th>
-<th>Annual Tuition</th>
-</tr>
-<tr>
-<td>In-State</td>
-<td>$10k–$15k</td>
-</tr>
-<tr>
-<td>Out-of-State</td>
-<td>$25k–$35k</td>
-</tr>
-<tr>
-<td>International</td>
-<td>$30k–$50k</td>
-</tr>
-</table>
-
-<h2>Medical School Access</h2>
-<ul>
-<li><strong>Green Card:</strong> Access to all U.S. schools</li>
-<li><strong>No Green Card:</strong> Limited schools</li>
-</ul>
-
-<h2>Residency Path</h2>
-<ul>
-<li><strong>Green Card:</strong> No visa required</li>
-<li><strong>No Green Card:</strong> Visa required</li>
-</ul>
-
-<h2>Age 21 Risk</h2>
-<p>
-Without a green card, students must switch visas at 21, increasing cost and limiting opportunities.
-</p>
-
-<h2>Summary</h2>
-<table>
-<tr>
-<th>Category</th>
-<th>Green Card</th>
-<th>No Green Card</th>
-</tr>
-<tr>
-<td>Tuition</td>
-<td>Lower</td>
-<td>Higher</td>
-</tr>
-<tr>
-<td>Financial Aid</td>
-<td>Available</td>
-<td>Not available</td>
-</tr>
-<tr>
-<td>Medical Access</td>
-<td>Full</td>
-<td>Limited</td>
-</tr>
-<tr>
-<td>Career Path</td>
-<td>Smoother</td>
-<td>More complex</td>
-</tr>
+<tr><th>Type</th><th>Cost</th></tr>
+<tr><td>In-State</td><td>$10k–$15k</td></tr>
+<tr><td>Out-of-State</td><td>$25k–$35k</td></tr>
+<tr><td>International</td><td>$30k–$50k</td></tr>
 </table>
 
 <h2>Final Recommendation</h2>
-<p>
-Obtaining a green card before age 21 provides major long-term advantages and simplifies the neurology career path.
-</p>
+<p>Getting a green card before age 21 makes the path much easier.</p>
 
 </div>
 
 <!-- FOOTER -->
 <footer>
 <p>© 2026 Saanvi’s Future Neurologist Guide</p>
-<p>Created with dedication and love</p>
 <p>
-    index.htmlHome</a>
-    resources.htmlResources</a>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
 </p>
 </footer>
-
-<script>
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js");
-}
-</script>
 
 </body>
 </html>
