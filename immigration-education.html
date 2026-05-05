@@ -1,340 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immigration Impact on Education – Saanvi’s Future Neurologist Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Immigration Impact on Education – Saanvi’s Future Neurologist Guide</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #333;
-            line-height: 1.6;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+    background: #f9f9fb;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
 
-        nav {
-            background: #ff6f91;
-            padding: 15px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            font-size: 18px;
-        }
+/* ✅ STICKY NAV */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 111, 145, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
 
-        .dropbtn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background: white;
-            min-width: 240px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            z-index: 10;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    min-width: 240px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
 
-        .dropdown-content a {
-            color: #ff6f91;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-        }
+.dropdown-content a {
+    color: #ff6f91;
+    padding: 12px 18px;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background: #ffe3ea;
-        }
+.dropdown-content a:hover {
+    background: #fff0f4;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
 
-        header h1 {
-            color: #ff6f91;
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
+header h1 {
+    color: #ff6f91;
+    font-size: 30px;
+    margin: 0;
+}
 
-        h2 {
-            color: #ff6f91;
-            margin-top: 30px;
-        }
+header p {
+    color: #6e6e73;
+    margin-top: 10px;
+}
 
-        h3 {
-            color: #ff6f91;
-            margin-top: 20px;
-        }
+/* CONTENT */
+.content {
+    max-width: 950px;
+    margin: auto;
+    padding: 10px 20px 40px;
+}
 
-        .content {
-            padding: 20px 40px;
-            max-width: 950px;
-            margin: auto;
-        }
+h2, h3 {
+    color: #ff6f91;
+}
 
-        ul {
-            margin-left: 20px;
-        }
+/* ✅ MODERN TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
+th {
+    background: #ffe3ea;
+    color: #ff6f91;
+    padding: 12px;
+    text-align: left;
+}
 
-        th, td {
-            border: 1px solid #ffd1dc;
-            padding: 8px;
-            text-align: left;
-        }
+td {
+    padding: 12px;
+    border-top: 1px solid #eee;
+}
 
-        th {
-            background: #ffe3ea;
-            color: #ff6f91;
-        }
+/* FOOTER */
+footer {
+    background: #ff6f91;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
 
-        caption {
-            text-align: left;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #ff6f91;
-        }
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-        @media (max-width: 600px) {
-            .content {
-                padding: 20px;
-            }
-        }
-    </style>
+/* MOBILE */
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 20px;
+    }
+}
+</style>
 
-    <link rel="manifest" href="manifest.json">
+manifest.json
 </head>
-<footer style="background:#ff6f91; color:white; padding:20px; text-align:center; margin-top:40px; border-radius:12px 12px 0 0;">
-    <p style="margin:5px 0; font-size:16px;">© 2026 Saanvi’s Future Neurologist Guide</p>
-    <p style="margin:5px 0; font-size:14px;">Created with dedication and love</p>
-    <p style="margin:10px 0;">
-        <a href="index.html" style="color:white; text-decoration:none; margin:0 10px;">Home</a>
-        <a href="resources.html" style="color:white; text-decoration:none; margin:0 10px;">Resources</a>
-        
-    </p>
-</footer>
+
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="index.html">Home</a>
+<!-- NAV -->
+<nav>
+    index.htmlHome</a>
 
-        <div class="dropdown">
-            <button class="dropbtn">Chapters ▼</button>
-            <div class="dropdown-content">
-                <a href="high-school.html">High School Plan</a>
-                <a href="timeline.html">Timeline: 8th Grade → Neurologist</a>
-                <a href="immigration-comparison.html">Green Card vs No Green Card</a>
-                <a href="immigration-education.html">Immigration Impact on Education</a>
-                <a href="eamcet-registration.html">EAMCET Registration</a>
-                <a href="neet-registration.html">NEET Registration</a>
-                <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
-                <a href="us-premed-vs-mbbs.html">U.S. Pre‑Med vs India MBBS</a>
-                <a href="mbbs-to-usa-neurology.html">MBBS → Neurologist in USA</a>
-                <a href="resources.html">Student Resources</a>
-            </div>
+    <div class="dropdown">
+        <button class="dropbtn">Chapters ▼</button>
+        <div class="dropdown-content">
+            high-school.htmlHigh School Plan</a>
+            timeline.htmlTimeline</a>
+            immigration-comparison.htmlGreen Card vs No Green Card</a>
+            immigration-education.htmlEducation Impact</a>
+            eamcet-registration.htmlEAMCET</a>
+            neet-registration.htmlNEET</a>
+            eamcet-vs-neet.htmlEAMCET vs NEET</a>
+            us-premed-vs-mbbs.htmlU.S. vs MBBS</a>
+            mbbs-to-usa-neurology.htmlMBBS → USA</a>
+            resources.htmlResources</a>
         </div>
-    </nav>
-
-    <!-- HEADER -->
-    <header>
-        <h1>Green Card vs No Green Card: Education Impact</h1>
-        <p>How immigration status shapes tuition, financial aid, and the neurology pathway.</p>
-    </header>
-
-    <!-- CONTENT -->
-    <div class="content">
-
-        <h2>Executive Summary</h2>
-        <p>
-            A child's immigration status significantly affects their educational and career opportunities in the United States.
-            For a student pursuing neurology, having a green card opens access to in‑state tuition, federal financial aid,
-            all U.S. medical schools, and a smoother path to residency and specialization. Without a green card, the student
-            is treated as an international applicant, facing higher tuition, limited aid, and restricted access to medical
-            schools and residencies.
-        </p>
-
-        <h2>Section 1: High School Impact</h2>
-        <ul>
-            <li>No difference between green card and no green card.</li>
-            <li>Public school access is free for both.</li>
-            <li>Extracurriculars, AP courses, and academic opportunities remain the same.</li>
-        </ul>
-
-        <h2>Section 2: College Admissions Comparison</h2>
-
-        <h3>With Green Card</h3>
-        <ul>
-            <li>Treated as a domestic student.</li>
-            <li>Easier admissions at public and private universities.</li>
-            <li>Eligible for in‑state tuition after residency.</li>
-            <li>Eligible for FAFSA, Pell Grants, federal loans, and work‑study.</li>
-            <li>More scholarships available.</li>
-        </ul>
-
-        <h3>Without Green Card</h3>
-        <ul>
-            <li>Treated as an international student.</li>
-            <li>Higher competition for limited international seats.</li>
-            <li>Must pay out‑of‑state or international tuition.</li>
-            <li>No federal financial aid.</li>
-            <li>Limited scholarships.</li>
-        </ul>
-
-        <h2>Section 3: Tuition Cost Comparison Table</h2>
-
-        <table>
-            <tr>
-                <th>Type</th>
-                <th>Tuition Range (Annual)</th>
-                <th>Example (Ohio State University)</th>
-            </tr>
-            <tr>
-                <td>In‑State (Green Card)</td>
-                <td>$10,000 – $15,000</td>
-                <td>$12,000</td>
-            </tr>
-            <tr>
-                <td>Out‑of‑State (No Green Card)</td>
-                <td>$25,000 – $35,000</td>
-                <td>$32,000</td>
-            </tr>
-            <tr>
-                <td>International (No Green Card)</td>
-                <td>$30,000 – $50,000</td>
-                <td>$36,000</td>
-            </tr>
-        </table>
-
-        <h2>Section 4: Medical School Eligibility</h2>
-
-        <h3>With Green Card</h3>
-        <ul>
-            <li>Eligible for all 150+ U.S. medical schools.</li>
-            <li>Eligible for federal loans.</li>
-            <li>No visa issues.</li>
-            <li>Easier access to research and clinical programs.</li>
-        </ul>
-
-        <h3>Without Green Card</h3>
-        <ul>
-            <li>Only ~40 medical schools accept international students.</li>
-            <li>Many require proof of full tuition upfront.</li>
-            <li>No federal loans.</li>
-            <li>Higher GPA/MCAT expectations.</li>
-            <li>Limited seats for international applicants.</li>
-        </ul>
-
-        <h2>Section 5: Residency & Neurology Pathway</h2>
-
-        <h3>With Green Card</h3>
-        <ul>
-            <li>No visa required for residency.</li>
-            <li>Easier matching into neurology programs.</li>
-            <li>Eligible for all fellowships.</li>
-        </ul>
-
-        <h3>Without Green Card</h3>
-        <ul>
-            <li>Must secure J‑1 or H‑1B visa.</li>
-            <li>Some residency programs do not sponsor visas.</li>
-            <li>Additional immigration steps required after residency.</li>
-        </ul>
-
-        <h2>Section 6: Age‑Out Rule (Critical for H‑1B Families)</h2>
-        <p>
-            Children on H‑4 visas lose dependent status at age 21. If they do not receive a green card by then, they must
-            switch to an F‑1 student visa. This change increases tuition costs, eliminates eligibility for federal aid, and
-            restricts access to medical schools. Securing a green card before age 21 avoids these issues and ensures continuity
-            in education and career planning.
-        </p>
-
-        <h2>Section 7: Summary Table</h2>
-
-        <table>
-            <caption>Green Card vs No Green Card – Education & Career Summary</caption>
-            <tr>
-                <th>Category</th>
-                <th>With Green Card</th>
-                <th>Without Green Card</th>
-            </tr>
-            <tr>
-                <td>Tuition</td>
-                <td>In‑state rates</td>
-                <td>Out‑of‑state/international rates</td>
-            </tr>
-            <tr>
-                <td>Financial Aid</td>
-                <td>Eligible for FAFSA, loans, grants</td>
-                <td>Not eligible for federal aid</td>
-            </tr>
-            <tr>
-                <td>Medical School Access</td>
-                <td>All U.S. schools</td>
-                <td>~40 schools only</td>
-            </tr>
-            <tr>
-                <td>Residency</td>
-                <td>No visa needed</td>
-                <td>Requires J‑1 or H‑1B</td>
-            </tr>
-            <tr>
-                <td>Scholarships</td>
-                <td>Many available</td>
-                <td>Limited options</td>
-            </tr>
-            <tr>
-                <td>Career Path</td>
-                <td>Straightforward</td>
-                <td>More complex with visa hurdles</td>
-            </tr>
-        </table>
-
-        <h2>Section 8: Final Recommendations</h2>
-        <p>
-            For families on H‑1B visas, obtaining a green card before the child turns 21 is highly recommended.
-            It ensures access to affordable education, full financial aid, and a smoother path to medical school and a
-            neurology career. Delaying green card processing can significantly increase costs and limit opportunities.
-            Early planning is essential.
-        </p>
-
     </div>
+</nav>
 
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
-        }
-    </script>
+<!-- HEADER -->
+<header>
+    <h1>Green Card vs No Green Card: Education Impact</h1>
+    <p>How immigration status shapes tuition, financial aid, and career pathways.</p>
+</header>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>Executive Summary</h2>
+<p>
+Immigration status significantly impacts tuition costs, financial aid, and access to medical schools.
+A green card simplifies the path to a neurology career.
+</p>
+
+<h2>High School Impact</h2>
+<ul>
+<li>No difference in school access</li>
+<li>Same academic and extracurricular opportunities</li>
+</ul>
+
+<h2>College Admissions</h2>
+
+<h3>With Green Card</h3>
+<ul>
+<li>Domestic student status</li>
+<li>Lower tuition (possible in-state)</li>
+<li>Eligible for financial aid</li>
+<li>More scholarships</li>
+</ul>
+
+<h3>Without Green Card</h3>
+<ul>
+<li>International status</li>
+<li>Higher tuition</li>
+<li>Limited aid</li>
+<li>Fewer scholarships</li>
+</ul>
+
+<h2>Tuition Comparison</h2>
+<table>
+<tr>
+<th>Type</th>
+<th>Annual Tuition</th>
+</tr>
+<tr>
+<td>In-State</td>
+<td>$10k–$15k</td>
+</tr>
+<tr>
+<td>Out-of-State</td>
+<td>$25k–$35k</td>
+</tr>
+<tr>
+<td>International</td>
+<td>$30k–$50k</td>
+</tr>
+</table>
+
+<h2>Medical School Access</h2>
+<ul>
+<li><strong>Green Card:</strong> Access to all U.S. schools</li>
+<li><strong>No Green Card:</strong> Limited schools</li>
+</ul>
+
+<h2>Residency Path</h2>
+<ul>
+<li><strong>Green Card:</strong> No visa required</li>
+<li><strong>No Green Card:</strong> Visa required</li>
+</ul>
+
+<h2>Age 21 Risk</h2>
+<p>
+Without a green card, students must switch visas at 21, increasing cost and limiting opportunities.
+</p>
+
+<h2>Summary</h2>
+<table>
+<tr>
+<th>Category</th>
+<th>Green Card</th>
+<th>No Green Card</th>
+</tr>
+<tr>
+<td>Tuition</td>
+<td>Lower</td>
+<td>Higher</td>
+</tr>
+<tr>
+<td>Financial Aid</td>
+<td>Available</td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Medical Access</td>
+<td>Full</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td>Career Path</td>
+<td>Smoother</td>
+<td>More complex</td>
+</tr>
+</table>
+
+<h2>Final Recommendation</h2>
+<p>
+Obtaining a green card before age 21 provides major long-term advantages and simplifies the neurology career path.
+</p>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Saanvi’s Future Neurologist Guide</p>
+<p>Created with dedication and love</p>
+<p>
+    index.htmlHome</a>
+    resources.htmlResources</a>
+</p>
+</footer>
+
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
 
 </body>
 </html>
