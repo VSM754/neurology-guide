@@ -1,306 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEET Registration from the United States – Saanvi’s Future Neurologist Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEET Registration from the United States – Saanvi’s Future Neurologist Guide</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #333;
-            line-height: 1.6;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+    background: #f9f9fb;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
 
-        nav {
-            background: #ff6f91;
-            padding: 15px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            font-size: 18px;
-        }
+/* ✅ STICKY NAV */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 111, 145, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
 
-        .dropbtn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background: white;
-            min-width: 240px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            z-index: 10;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    min-width: 240px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
 
-        .dropdown-content a {
-            color: #ff6f91;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-        }
+.dropdown-content a {
+    color: #ff6f91;
+    padding: 12px 18px;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background: #ffe3ea;
-        }
+.dropdown-content a:hover {
+    background: #fff0f4;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
 
-        header h1 {
-            color: #ff6f91;
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
+header h1 {
+    color: #ff6f91;
+    font-size: 30px;
+    margin: 0;
+}
 
-        h2 {
-            color: #ff6f91;
-            margin-top: 30px;
-        }
+header p {
+    color: #6e6e73;
+    margin-top: 10px;
+}
 
-        h3 {
-            color: #ff6f91;
-            margin-top: 20px;
-        }
+/* CONTENT */
+.content {
+    max-width: 950px;
+    margin: auto;
+    padding: 10px 20px 40px;
+}
 
-        .content {
-            padding: 20px 40px;
-            max-width: 950px;
-            margin: auto;
-        }
+h2, h3 {
+    color: #ff6f91;
+}
 
-        ul, ol {
-            margin-left: 20px;
-        }
+/* FOOTER */
+footer {
+    background: #ff6f91;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
 
-        @media (max-width: 600px) {
-            .content {
-                padding: 20px;
-            }
-        }
-    </style>
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-    <link rel="manifest" href="manifest.json">
+/* MOBILE */
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 20px;
+    }
+}
+</style>
+
+<link rel="manifest" href="manifest.json">
 </head>
-<footer style="background:#ff6f91; color:white; padding:20px; text-align:center; margin-top:40px; border-radius:12px 12px 0 0;">
-    <p style="margin:5px 0; font-size:16px;">© 2026 Saanvi’s Future Neurologist Guide</p>
-    <p style="margin:5px 0; font-size:14px;">Created with dedication and love</p>
-    <p style="margin:10px 0;">
-        <a href="index.html" style="color:white; text-decoration:none; margin:0 10px;">Home</a>
-        <a href="resources.html" style="color:white; text-decoration:none; margin:0 10px;">Resources</a>
-       
-    </p>
-</footer>
+
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="index.html">Home</a>
+<!-- NAV -->
+<nav>
+    <a href="index.html">Home</a>
 
-        <div class="dropdown">
-            <button class="dropbtn">Chapters ▼</button>
-            <div class="dropdown-content">
-                <a href="high-school.html">High School Plan</a>
-                <a href="timeline.html">Timeline: 8th Grade → Neurologist</a>
-                <a href="immigration-comparison.html">Green Card vs No Green Card</a>
-                <a href="immigration-education.html">Immigration Impact on Education</a>
-                <a href="eamcet-registration.html">EAMCET Registration</a>
-                <a href="neet-registration.html">NEET Registration</a>
-                <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
-                <a href="us-premed-vs-mbbs.html">U.S. Pre‑Med vs India MBBS</a>
-                <a href="mbbs-to-usa-neurology.html">MBBS → Neurologist in USA</a>
-                <a href="resources.html">Student Resources</a>
-            </div>
+    <div class="dropdown">
+        <button class="dropbtn">Chapters ▼</button>
+        <div class="dropdown-content">
+            <a href="high-school.html">High School Plan</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="immigration-comparison.html">Green Card vs No Green Card</a>
+            <a href="immigration-education.html">Education Impact</a>
+            <a href="eamcet-registration.html">EAMCET</a>
+            <a href="neet-registration.html">NEET</a>
+            <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
+            <a href="us-premed-vs-mbbs.html">U.S. vs MBBS</a>
+            <a href="mbbs-to-usa-neurology.html">MBBS → USA</a>
+            <a href="resources.html">Resources</a>
         </div>
-    </nav>
-
-    <!-- HEADER -->
-    <header>
-        <h1>How to Register for NEET from the United States</h1>
-        <p>A complete, student‑friendly guide for U.S.‑based applicants.</p>
-    </header>
-
-    <!-- CONTENT -->
-    <div class="content">
-
-        <h2>Overview</h2>
-        <p>
-            This guide provides a simple, step‑by‑step process for students living in the United States who want to register
-            for NEET (National Eligibility cum Entrance Test). NEET is mandatory for MBBS, BDS, and most medical programs
-            in India and abroad. Registration is fully online, but the student must be in India on the exam day.
-        </p>
-
-        <h2>Step 1: Check NEET Eligibility</h2>
-        <ul>
-            <li>Must have completed or be appearing for 12th grade (or equivalent).</li>
-            <li>Required subjects:
-                <ul>
-                    <li>Biology/Biotechnology</li>
-                    <li>Physics</li>
-                    <li>Chemistry</li>
-                </ul>
-            </li>
-            <li>Must be an Indian citizen, OCI, NRI, or foreign national.</li>
-            <li>U.S. 12th grade is accepted as equivalent.</li>
-        </ul>
-
-        <h2>Step 2: Visit the Official NEET Website</h2>
-        <ul>
-            <li>Go to the National Testing Agency (NTA) NEET portal.</li>
-            <li>Download the Information Bulletin.</li>
-            <li>Note:
-                <ul>
-                    <li>Application start and end dates.</li>
-                    <li>Correction window.</li>
-                    <li>Exam date.</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2>Step 3: Gather Required Documents</h2>
-        <p>Prepare the following before starting:</p>
-        <ul>
-            <li>Passport‑size photo (recent).</li>
-            <li>Signature (scanned).</li>
-            <li>Left‑hand thumb impression (if required).</li>
-            <li>Passport (recommended for NRI/OCI students).</li>
-            <li>U.S. school details (name, address, subjects).</li>
-            <li>Parent details (name, occupation, phone, email).</li>
-            <li>Payment method (international card or Indian card/UPI).</li>
-        </ul>
-
-        <h2>Step 4: Register Online</h2>
-        <ol>
-            <li>Click <strong>New Registration</strong> on the NEET website.</li>
-            <li>Enter:
-                <ul>
-                    <li>Name</li>
-                    <li>Date of birth</li>
-                    <li>Mobile number</li>
-                    <li>Email ID</li>
-                </ul>
-            </li>
-            <li>Create a password and note the <strong>Application Number</strong>.</li>
-        </ol>
-
-        <h2>Step 5: Fill the Application Form</h2>
-        <ul>
-            <li>Enter personal details.</li>
-            <li>Enter communication address (U.S. + India if applicable).</li>
-            <li>Enter academic details (10th &amp; 12th equivalent).</li>
-            <li>Select exam city preferences.</li>
-            <li>Upload:
-                <ul>
-                    <li>Photo</li>
-                    <li>Signature</li>
-                    <li>Other required documents</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2>Step 6: Pay the NEET Application Fee</h2>
-        <ul>
-            <li>Pay online using:
-                <ul>
-                    <li>Credit/debit card</li>
-                    <li>Net banking</li>
-                    <li>UPI</li>
-                </ul>
-            </li>
-            <li>Save the payment confirmation.</li>
-        </ul>
-
-        <h2>Step 7: Download the Confirmation Page</h2>
-        <ul>
-            <li>After submission, download the confirmation page.</li>
-            <li>Save it as a PDF for future use.</li>
-        </ul>
-
-        <h2>Step 8: Correction Window</h2>
-        <ul>
-            <li>Log in using Application Number and password.</li>
-            <li>Edit allowed fields.</li>
-            <li>Upload corrected documents if needed.</li>
-        </ul>
-
-        <h2>Step 9: Download the Admit Card</h2>
-        <ul>
-            <li>Released a few weeks before the exam.</li>
-            <li>Enter Application Number and date of birth.</li>
-            <li>Print multiple copies.</li>
-        </ul>
-
-        <h2>Step 10: Travel to India for the Exam</h2>
-        <ul>
-            <li>Arrive 7–10 days before the exam.</li>
-            <li>Carry:
-                <ul>
-                    <li>Admit card</li>
-                    <li>Passport/Aadhaar</li>
-                    <li>Additional documents listed on the admit card</li>
-                </ul>
-            </li>
-            <li>Reach the center early.</li>
-        </ul>
-
-        <h2>Step 11: After the Exam</h2>
-        <ul>
-            <li>Check results on the NTA website.</li>
-            <li>Download the Scorecard.</li>
-            <li>Participate in counseling (state or national) depending on category.</li>
-        </ul>
-
-        <h2>Summary Checklist</h2>
-        <ul>
-            <li>Check eligibility.</li>
-            <li>Download NEET bulletin.</li>
-            <li>Gather documents.</li>
-            <li>Register online.</li>
-            <li>Fill application.</li>
-            <li>Pay fee.</li>
-            <li>Download confirmation.</li>
-            <li>Use correction window.</li>
-            <li>Download admit card.</li>
-            <li>Travel to India.</li>
-            <li>Write exam.</li>
-            <li>Attend counseling.</li>
-        </ul>
-
     </div>
+</nav>
 
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
-        }
-    </script>
+<!-- HEADER -->
+<header>
+    <h1>NEET Registration from the United States</h1>
+    <p>Step‑by‑step guide for U.S.-based students.</p>
+</header>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>Overview</h2>
+<p>
+NEET is required for MBBS and medical programs. Registration is fully online, but you must travel to India for the exam.
+</p>
+
+<h2>Step 1: Check Eligibility</h2>
+<ul>
+<li>12th grade with Physics, Chemistry, Biology</li>
+<li>India/OCI/NRI eligibility</li>
+</ul>
+
+<h2>Step 2: Visit Official Website</h2>
+<ul>
+<li>Check dates and bulletin</li>
+</ul>
+
+<h2>Step 3: Documents</h2>
+<ul>
+<li>Photo & signature</li>
+<li>Passport</li>
+<li>School details</li>
+</ul>
+
+<h2>Step 4: Register</h2>
+<ul>
+<li>Create login</li>
+<li>Save Application Number</li>
+</ul>
+
+<h2>Step 5: Fill Form</h2>
+<ul>
+<li>Personal + academic details</li>
+<li>Upload documents</li>
+</ul>
+
+<h2>Step 6: Pay Fee</h2>
+<ul>
+<li>Card / UPI / Net banking</li>
+</ul>
+
+<h2>Step 7: Confirmation</h2>
+<ul>
+<li>Download confirmation page</li>
+</ul>
+
+<h2>Step 8: Correction Window</h2>
+<ul>
+<li>Edit details if needed</li>
+</ul>
+
+<h2>Step 9: Admit Card</h2>
+<ul>
+<li>Download before exam</li>
+</ul>
+
+<h2>Step 10: Travel to India</h2>
+<ul>
+<li>Arrive early</li>
+<li>Carry documents</li>
+</ul>
+
+<h2>Step 11: After Exam</h2>
+<ul>
+<li>Check results</li>
+<li>Attend counseling</li>
+</ul>
+
+<h2>Checklist</h2>
+<ul>
+<li>Apply</li>
+<li>Pay fee</li>
+<li>Download admit card</li>
+<li>Write exam</li>
+<li>Attend counseling</li>
+</ul>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Saanvi’s Future Neurologist Guide</p>
+<p>Created with dedication and love</p>
+<p>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+</p>
+</footer>
+
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
 
 </body>
 </html>
