@@ -1,286 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EAMCET Registration from the United States – Saanvi’s Future Neurologist Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EAMCET Registration from the United States – Saanvi’s Future Neurologist Guide</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #333;
-            line-height: 1.6;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+    background: #f9f9fb;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
 
-        nav {
-            background: #ff6f91;
-            padding: 15px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            font-size: 18px;
-        }
+/* ✅ STICKY NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 111, 145, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
 
-        .dropbtn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background: white;
-            min-width: 240px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            z-index: 10;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    min-width: 240px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
 
-        .dropdown-content a {
-            color: #ff6f91;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-        }
+.dropdown-content a {
+    color: #ff6f91;
+    padding: 12px 18px;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background: #ffe3ea;
-        }
+.dropdown-content a:hover {
+    background: #fff0f4;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
 
-        header h1 {
-            color: #ff6f91;
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
+header h1 {
+    color: #ff6f91;
+    font-size: 30px;
+    margin: 0;
+}
 
-        h2 {
-            color: #ff6f91;
-            margin-top: 30px;
-        }
+header p {
+    color: #6e6e73;
+    margin-top: 10px;
+}
 
-        h3 {
-            color: #ff6f91;
-            margin-top: 20px;
-        }
+/* CONTENT */
+.content {
+    max-width: 950px;
+    margin: auto;
+    padding: 10px 20px 40px;
+}
 
-        .content {
-            padding: 20px 40px;
-            max-width: 950px;
-            margin: auto;
-        }
+h2 {
+    color: #ff6f91;
+    margin-top: 30px;
+}
 
-        ul, ol {
-            margin-left: 20px;
-        }
+h3 {
+    color: #ff6f91;
+    margin-top: 20px;
+}
 
-        @media (max-width: 600px) {
-            .content {
-                padding: 20px;
-            }
-        }
-    </style>
+ul, ol {
+    margin-left: 20px;
+}
 
-    <link rel="manifest" href="manifest.json">
+/* ✅ FOOTER */
+footer {
+    background: #ff6f91;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 20px;
+    }
+}
+</style>
+
+<link rel="manifest" href="manifest.json">
 </head>
-<footer style="background:#ff6f91; color:white; padding:20px; text-align:center; margin-top:40px; border-radius:12px 12px 0 0;">
-    <p style="margin:5px 0; font-size:16px;">© 2026 Saanvi’s Future Neurologist Guide</p>
-    <p style="margin:5px 0; font-size:14px;">Created with dedication and love</p>
-    <p style="margin:10px 0;">
-        <a href="index.html" style="color:white; text-decoration:none; margin:0 10px;">Home</a>
-        <a href="resources.html" style="color:white; text-decoration:none; margin:0 10px;">Resources</a>
-        
-    </p>
-</footer>
+
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="index.html">Home</a>
+<!-- NAV -->
+<nav>
+    <a href="index.html">Home</a>
 
-        <div class="dropdown">
-            <button class="dropbtn">Chapters ▼</button>
-            <div class="dropdown-content">
-                <a href="high-school.html">High School Plan</a>
-                <a href="timeline.html">Timeline: 8th Grade → Neurologist</a>
-                <a href="immigration-comparison.html">Green Card vs No Green Card</a>
-                <a href="immigration-education.html">Immigration Impact on Education</a>
-                <a href="eamcet-registration.html">EAMCET Registration</a>
-                <a href="neet-registration.html">NEET Registration</a>
-                <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
-                <a href="us-premed-vs-mbbs.html">U.S. Pre‑Med vs India MBBS</a>
-                <a href="mbbs-to-usa-neurology.html">MBBS → Neurologist in USA</a>
-                <a href="resources.html">Student Resources</a>
-            </div>
+    <div class="dropdown">
+        <button class="dropbtn">Chapters ▼</button>
+        <div class="dropdown-content">
+            <a href="high-school.html">High School Plan</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="immigration-comparison.html">Green Card vs No Green Card</a>
+            <a href="immigration-education.html">Education Impact</a>
+            <a href="eamcet-registration.html">EAMCET</a>
+            <a href="neet-registration.html">NEET</a>
+            <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
+            <a href="us-premed-vs-mbbs.html">U.S. vs MBBS</a>
+            <a href="mbbs-to-usa-neurology.html">MBBS → USA</a>
+            <a href="resources.html">Resources</a>
         </div>
-    </nav>
-
-    <!-- HEADER -->
-    <header>
-        <h1>How to Register for EAMCET from the United States</h1>
-        <p>A simple, step‑by‑step guide for U.S.‑based students applying to AP EAMCET (EAPCET).</p>
-    </header>
-
-    <!-- CONTENT -->
-    <div class="content">
-
-        <h2>Overview</h2>
-        <p>
-            This guide provides a clean, step‑by‑step process for students living in the United States who want to register
-            for AP EAMCET (also called EAPCET). The entire application can be completed online, and the student only needs
-            to be physically present in India on the exam day.
-        </p>
-
-        <h2>Step 1: Identify the Correct Exam</h2>
-        <ul>
-            <li>AP EAMCET / EAPCET (Engineering, Agriculture &amp; Pharmacy).</li>
-            <li>Choose your stream:
-                <ul>
-                    <li>Engineering (E)</li>
-                    <li>Agriculture &amp; Pharmacy (AM)</li>
-                    <li>Or both, if needed.</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2>Step 2: Check Notification &amp; Important Dates</h2>
-        <ul>
-            <li>Visit the official AP EAPCET website for the current year.</li>
-            <li>Download the Information Brochure.</li>
-            <li>Note:
-                <ul>
-                    <li>Application start date.</li>
-                    <li>Application end date.</li>
-                    <li>Correction window.</li>
-                    <li>Exam dates.</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2>Step 3: Gather Required Documents</h2>
-        <p>Prepare the following before starting the application:</p>
-        <ul>
-            <li>Personal details (name, date of birth, gender, parent details).</li>
-            <li>Education details (10th &amp; 12th equivalent from U.S.).</li>
-            <li>U.S. school name and address.</li>
-            <li>Passport or Aadhaar (if available).</li>
-            <li>Scanned photo and signature (as per brochure specifications).</li>
-            <li>Payment method (international card or Indian card/UPI).</li>
-        </ul>
-
-        <h2>Step 4: Pay the Application Fee Online</h2>
-        <ul>
-            <li>Go to <strong>Fee Payment</strong> on the official AP EAPCET website.</li>
-            <li>Enter basic details.</li>
-            <li>Pay using:
-                <ul>
-                    <li>Credit/debit card,</li>
-                    <li>Net banking,</li>
-                    <li>UPI (if someone in India pays).</li>
-                </ul>
-            </li>
-            <li>Save the <strong>Payment ID</strong> carefully.</li>
-        </ul>
-
-        <h2>Step 5: Fill the Online Application Form</h2>
-        <ul>
-            <li>Enter Payment ID, mobile number, and date of birth.</li>
-            <li>Fill in:
-                <ul>
-                    <li>Personal details.</li>
-                    <li>Educational details.</li>
-                    <li>Communication address (U.S. + India if applicable).</li>
-                </ul>
-            </li>
-            <li>Upload:
-                <ul>
-                    <li>Photo.</li>
-                    <li>Signature.</li>
-                </ul>
-            </li>
-            <li>Select exam centers in Andhra Pradesh.</li>
-            <li>Submit and save the <strong>Application Number</strong>.</li>
-        </ul>
-
-        <h2>Step 6: Use the Correction Window (If Needed)</h2>
-        <ul>
-            <li>Log in with Application Number and date of birth.</li>
-            <li>Edit allowed fields during the correction window.</li>
-        </ul>
-
-        <h2>Step 7: Download the Hall Ticket</h2>
-        <ul>
-            <li>Visit the official site near the exam date.</li>
-            <li>Enter Application Number and date of birth.</li>
-            <li>Download and print multiple copies of the hall ticket.</li>
-        </ul>
-
-        <h2>Step 8: Travel to India for the Exam</h2>
-        <ul>
-            <li>Arrive in India 5–7 days before the exam.</li>
-            <li>Carry:
-                <ul>
-                    <li>Hall ticket.</li>
-                    <li>Passport or Aadhaar.</li>
-                </ul>
-            </li>
-            <li>Reach the exam center early on exam day.</li>
-        </ul>
-
-        <h2>Step 9: After the Exam</h2>
-        <ul>
-            <li>Check results online on the official website.</li>
-            <li>Download the Rank Card.</li>
-            <li>Register for counseling when announced.</li>
-            <li>Upload certificates and complete verification as required.</li>
-        </ul>
-
-        <h2>Summary Checklist</h2>
-        <ul>
-            <li>Check dates.</li>
-            <li>Gather documents.</li>
-            <li>Pay fee.</li>
-            <li>Submit application.</li>
-            <li>Download hall ticket.</li>
-            <li>Travel to India.</li>
-            <li>Write exam.</li>
-            <li>Attend counseling.</li>
-        </ul>
-
     </div>
+</nav>
 
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
-        }
-    </script>
+<!-- HEADER -->
+<header>
+    <h1>How to Register for EAMCET from the United States</h1>
+    <p>A step‑by‑step guide for U.S.‑based students.</p>
+</header>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>Overview</h2>
+<p>
+This guide explains how students living in the United States can register for AP EAMCET (EAPCET) entirely online and prepare for the exam in India.
+</p>
+
+<h2>Step 1: Identify the Correct Exam</h2>
+<ul>
+<li>AP EAMCET / EAPCET</li>
+<li>Choose stream: Engineering (E), Agriculture & Pharmacy (AM), or both</li>
+</ul>
+
+<h2>Step 2: Check Important Dates</h2>
+<ul>
+<li>Application start & end dates</li>
+<li>Correction window</li>
+<li>Exam schedule</li>
+</ul>
+
+<h2>Step 3: Gather Documents</h2>
+<ul>
+<li>Personal and education details</li>
+<li>U.S. school information</li>
+<li>Passport / Aadhaar</li>
+<li>Photo & signature</li>
+<li>Payment method</li>
+</ul>
+
+<h2>Step 4: Pay Fee</h2>
+<ul>
+<li>Use card, net banking, or UPI</li>
+<li>Save Payment ID</li>
+</ul>
+
+<h2>Step 5: Fill Application</h2>
+<ul>
+<li>Enter details and upload documents</li>
+<li>Select exam centers</li>
+<li>Save Application Number</li>
+</ul>
+
+<h2>Step 6: Correction Window</h2>
+<ul>
+<li>Edit details if needed</li>
+</ul>
+
+<h2>Step 7: Hall Ticket</h2>
+<ul>
+<li>Download before exam</li>
+<li>Print copies</li>
+</ul>
+
+<h2>Step 8: Travel to India</h2>
+<ul>
+<li>Arrive 5–7 days early</li>
+<li>Carry required documents</li>
+</ul>
+
+<h2>Step 9: After Exam</h2>
+<ul>
+<li>Check results</li>
+<li>Attend counseling</li>
+</ul>
+
+<h2>Checklist</h2>
+<ul>
+<li>Apply</li>
+<li>Pay fee</li>
+<li>Download hall ticket</li>
+<li>Attend exam</li>
+<li>Complete counseling</li>
+</ul>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Saanvi’s Future Neurologist Guide</p>
+<p>Created with dedication and love</p>
+<p>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+</p>
+</footer>
+
+<!-- SERVICE WORKER -->
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
 
 </body>
 </html>
