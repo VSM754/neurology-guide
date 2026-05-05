@@ -1,134 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saanvi’s Future Neurologist Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saanvi’s Future Neurologist Guide</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #333;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+    background: #f9f9fb;
+    color: #1d1d1f;
+}
 
-        /* NAVIGATION BAR */
-        nav {
-            background: #ff6f91;
-            padding: 10px 25px; /* reduced */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            font-size: 18px;
-        }
+/* ✅ STICKY NAVBAR (Apple style) */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 111, 145, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        /* DROPDOWN */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
 
-        .dropbtn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background: white;
-            min-width: 220px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            z-index: 10;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    min-width: 240px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
 
-        .dropdown-content a {
-            color: #ff6f91;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-        }
+.dropdown-content a {
+    color: #ff6f91;
+    padding: 12px 18px;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background: #ffe3ea;
-        }
+.dropdown-content a:hover {
+    background: #fff0f4;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        /* HEADER */
-        header {
-            text-align: center;
-            padding: 15px 20px; /* reduced from 40px */
-        }
+/* ✅ HEADER (Apple minimal style) */
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
 
-        header h1 {
-            color: #ff6f91;
-            font-size: 36px;
-            margin-top: 0; /* removes gap */
-            margin-bottom: 10px;
-        }
+header h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 700;
+    color: #ff6f91;
+}
 
-        /* GRID */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            padding: 20px 40px;
-        }
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #6e6e73;
+}
 
-        .card {
-            background: #fff;
-            border-radius: 12px;
-            padding: 25px;
-            text-align: center;
-            border: 2px solid #ffd1dc;
-            transition: 0.3s;
-            cursor: pointer;
-        }
+/* ✅ GRID */
+.grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #ff6f91;
-            box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
-        }
+/* ✅ CARDS (Apple style) */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.25s ease;
+    border: 1px solid #eee;
+    text-decoration: none;
+}
 
-        .card h3 {
-            color: #ff6f91;
-            font-size: 20px;
-        }
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
 
-        /* RESPONSIVE */
-        @media (max-width: 900px) {
-            .grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
+.card h3 {
+    color: #ff6f91;
+    margin-bottom: 10px;
+}
 
-        @media (max-width: 600px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+.card p {
+    color: #6e6e73;
+}
 
-    <link rel="manifest" href="manifest.json">
+/* ✅ FOOTER */
+footer {
+    background: #ff6f91;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -136,19 +164,20 @@
 <!-- NAV -->
 <nav>
     <a href="index.html">Home</a>
+
     <div class="dropdown">
         <button class="dropbtn">Chapters ▼</button>
         <div class="dropdown-content">
             <a href="high-school.html">High School Plan</a>
-            <a href="timeline.html">Timeline: 8th Grade → Neurologist</a>
+            <a href="timeline.html">Timeline</a>
             <a href="immigration-comparison.html">Green Card vs No Green Card</a>
-            <a href="immigration-education.html">Immigration Impact</a>
-            <a href="eamcet-registration.html">EAMCET Registration</a>
-            <a href="neet-registration.html">NEET Registration</a>
+            <a href="immigration-education.html">Education Impact</a>
+            <a href="eamcet-registration.html">EAMCET</a>
+            <a href="neet-registration.html">NEET</a>
             <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
-            <a href="us-premed-vs-mbbs.html">U.S. Pre‑Med vs MBBS</a>
-            <a href="mbbs-to-usa-neurology.html">MBBS → USA Neurologist</a>
-            <a href="resources.html">Student Resources</a>
+            <a href="us-premed-vs-mbbs.html">U.S. vs India</a>
+            <a href="mbbs-to-usa-neurology.html">MBBS → USA</a>
+            <a href="resources.html">Resources</a>
         </div>
     </div>
 </nav>
@@ -156,80 +185,73 @@
 <!-- HEADER -->
 <header>
     <h1>Saanvi’s Future Neurologist Guide</h1>
-    <p>A complete roadmap from high school to neurology — designed just for you.</p>
+    <p>A complete roadmap from high school to neurology.</p>
 </header>
 
 <!-- GRID -->
 <div class="grid">
 
-    <a class="card" href="high-school.html">
-        <h3>High School Plan</h3>
-        <p>Year‑by‑year roadmap for grades 9–12.</p>
-    </a>
+<a class="card" href="high-school.html">
+    <h3>High School Plan</h3>
+    <p>Grades 9–12 roadmap</p>
+</a>
 
-    <a class="card" href="timeline.html">
-        <h3>Timeline: 8th → Neurologist</h3>
-        <p>Full journey from middle school to specialization.</p>
-    </a>
+<a class="card" href="timeline.html">
+    <h3>Timeline</h3>
+    <p>8th grade → Neurologist</p>
+</a>
 
-    <a class="card" href="immigration-comparison.html">
-        <h3>Green Card vs No Green Card</h3>
-        <p>How status affects the path.</p>
-    </a>
+<a class="card" href="immigration-comparison.html">
+    <h3>Immigration Status</h3>
+    <p>Green Card impact</p>
+</a>
 
-    <a class="card" href="immigration-education.html">
-        <h3>Education Impact</h3>
-        <p>Tuition & access differences.</p>
-    </a>
+<a class="card" href="immigration-education.html">
+    <h3>Education Impact</h3>
+    <p>Costs & access</p>
+</a>
 
-    <a class="card" href="eamcet-registration.html">
-        <h3>EAMCET Registration</h3>
-        <p>Step‑by‑step guide.</p>
-    </a>
+<a class="card" href="eamcet-registration.html">
+    <h3>EAMCET</h3>
+    <p>Registration guide</p>
+</a>
 
-    <a class="card" href="neet-registration.html">
-        <h3>NEET Registration</h3>
-        <p>Complete process.</p>
-    </a>
+<a class="card" href="neet-registration.html">
+    <h3>NEET</h3>
+    <p>Step-by-step process</p>
+</a>
 
-    <a class="card" href="eamcet-vs-neet.html">
-        <h3>EAMCET vs NEET</h3>
-        <p>Compare both exams.</p>
-    </a>
+<a class="card" href="eamcet-vs-neet.html">
+    <h3>EAMCET vs NEET</h3>
+    <p>Which is better</p>
+</a>
 
-    <a class="card" href="us-premed-vs-mbbs.html">
-        <h3>U.S. vs India Path</h3>
-        <p>Pre‑med vs MBBS breakdown.</p>
-    </a>
+<a class="card" href="us-premed-vs-mbbs.html">
+    <h3>U.S. vs MBBS</h3>
+    <p>Compare pathways</p>
+</a>
 
-    <a class="card" href="mbbs-to-usa-neurology.html">
-        <h3>MBBS → USA</h3>
-        <p>Become a neurologist in the US.</p>
-    </a>
+<a class="card" href="mbbs-to-usa-neurology.html">
+    <h3>MBBS → USA</h3>
+    <p>Become neurologist</p>
+</a>
 
-    <a class="card" href="resources.html">
-        <h3>Resources</h3>
-        <p>Helpful tools & links.</p>
-    </a>
+<a class="card" href="resources.html">
+    <h3>Resources</h3>
+    <p>Tools & links</p>
+</a>
 
 </div>
 
 <!-- FOOTER -->
-<footer style="background:#ff6f91; color:white; padding:20px; text-align:center; margin-top:40px;">
-    <p style="margin:5px;">© 2026 Saanvi’s Future Neurologist Guide</p>
-    <p style="margin:5px;">Created with dedication and love</p>
+<footer>
+    <p>© 2026 Saanvi’s Future Neurologist Guide</p>
+    <p>Created with dedication and love</p>
     <p>
-        <a href="index.html" style="color:white; margin:0 10px;">Home</a>
-        <a href="resources.html" style="color:white; margin:0 10px;">Resources</a>
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
     </p>
 </footer>
-
-<!-- SERVICE WORKER -->
-<script>
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js");
-}
-</script>
 
 </body>
 </html>
