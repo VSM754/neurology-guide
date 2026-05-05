@@ -1,392 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeline: 8th Grade to Neurologist – Saanvi’s Future Neurologist Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timeline: 8th Grade to Neurologist – Saanvi’s Future Neurologist Guide</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #333;
-            line-height: 1.6;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+    background: #f9f9fb;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
 
-        nav {
-            background: #ff6f91;
-            padding: 15px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            font-size: 18px;
-        }
+/* ✅ STICKY NAV */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 111, 145, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
 
-        .dropbtn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background: white;
-            min-width: 220px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            z-index: 10;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    min-width: 240px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
-        .dropdown-content a {
-            color: #ff6f91;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-        }
+.dropdown-content a {
+    color: #ff6f91;
+    padding: 12px 18px;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background: #ffe3ea;
-        }
+.dropdown-content a:hover {
+    background: #fff0f4;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
 
-        header h1 {
-            color: #ff6f91;
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
+header h1 {
+    color: #ff6f91;
+    margin: 0;
+}
 
-        h2 {
-            color: #ff6f91;
-            margin-top: 30px;
-        }
+header p {
+    color: #6e6e73;
+}
 
-        h3 {
-            color: #ff6f91;
-            margin-top: 20px;
-        }
+/* CONTENT */
+.content {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+}
 
-        .content {
-            padding: 20px 40px;
-            max-width: 900px;
-            margin: auto;
-        }
+h2, h3 {
+    color: #ff6f91;
+}
 
-        ul {
-            margin-left: 20px;
-        }
+/* ✅ TIMELINE CARDS (NEW UPGRADE) */
+.timeline-section {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    transition: 0.25s;
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
+.timeline-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
 
-        th, td {
-            border: 1px solid #ffd1dc;
-            padding: 8px;
-            text-align: left;
-        }
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
-        th {
-            background: #ffe3ea;
-            color: #ff6f91;
-        }
+th {
+    background: #ffe3ea;
+    color: #ff6f91;
+    padding: 10px;
+}
 
-        @media (max-width: 600px) {
-            .content {
-                padding: 20px;
-            }
-        }
-    </style>
+td {
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
 
-    <link rel="manifest" href="manifest.json">
+/* FOOTER */
+footer {
+    background: #ff6f91;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    nav { padding: 12px 20px; }
+}
+</style>
+
+<link rel="manifest" href="manifest.json">
 </head>
-<footer style="background:#ff6f91; color:white; padding:20px; text-align:center; margin-top:40px; border-radius:12px 12px 0 0;">
-    <p style="margin:5px 0; font-size:16px;">© 2026 Saanvi’s Future Neurologist Guide</p>
-    <p style="margin:5px 0; font-size:14px;">Created with dedication and love</p>
-    <p style="margin:10px 0;">
-        <a href="index.html" style="color:white; text-decoration:none; margin:0 10px;">Home</a>
-        <a href="resources.html" style="color:white; text-decoration:none; margin:0 10px;">Resources</a>
-        
-    </p>
-</footer>
+
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="index.html">Home</a>
+<!-- NAV -->
+<nav>
+    <a href="index.html">Home</a>
 
-        <div class="dropdown">
-            <button class="dropbtn">Chapters ▼</button>
-            <div class="dropdown-content">
-                <a href="high-school.html">High School Plan</a>
-                <a href="timeline.html">Timeline: 8th Grade → Neurologist</a>
-                <a href="immigration-comparison.html">Green Card vs No Green Card</a>
-                <a href="immigration-education.html">Immigration Impact on Education</a>
-                <a href="eamcet-registration.html">EAMCET Registration</a>
-                <a href="neet-registration.html">NEET Registration</a>
-                <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
-                <a href="us-premed-vs-mbbs.html">U.S. Pre‑Med vs India MBBS</a>
-                <a href="mbbs-to-usa-neurology.html">MBBS → Neurologist in USA</a>
-                <a href="resources.html">Student Resources</a>
-            </div>
+    <div class="dropdown">
+        <button class="dropbtn">Chapters ▼</button>
+        <div class="dropdown-content">
+            <a href="high-school.html">High School Plan</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="immigration-comparison.html">Immigration Status</a>
+            <a href="immigration-education.html">Education Impact</a>
+            <a href="eamcet-registration.html">EAMCET</a>
+            <a href="neet-registration.html">NEET</a>
+            <a href="resources.html">Resources</a>
         </div>
-    </nav>
-
-    <!-- HEADER -->
-    <header>
-        <h1>Timeline: 8th Grade to Neurologist</h1>
-        <p>A clear, parent‑friendly roadmap from middle school to a full neurology career.</p>
-    </header>
-
-    <!-- CONTENT -->
-    <div class="content">
-
-        <h2>Overview</h2>
-        <p>
-            This guide provides a simple, visual, and parent‑friendly timeline showing the full journey from 8th grade
-            all the way to becoming a neurologist. It highlights long‑term steps, key decisions, and major milestones.
-        </p>
-
-        <h2>8th Grade (Age 13–14)</h2>
-        <h3>Goals</h3>
-        <ul>
-            <li>Build strong study habits.</li>
-            <li>Strengthen math and science basics.</li>
-            <li>Encourage reading and curiosity.</li>
-        </ul>
-        <h3>Activities</h3>
-        <ul>
-            <li>Join science clubs.</li>
-            <li>Participate in school competitions.</li>
-            <li>Begin light volunteering (community service).</li>
-        </ul>
-
-        <h2>9th Grade (Freshman Year)</h2>
-        <h3>Goals</h3>
-        <ul>
-            <li>Adjust to high school academics.</li>
-            <li>Explore interest in biology and health.</li>
-        </ul>
-        <h3>Academics</h3>
-        <ul>
-            <li>Biology.</li>
-            <li>Algebra I or Geometry.</li>
-        </ul>
-        <h3>Activities</h3>
-        <ul>
-            <li>Science Olympiad.</li>
-            <li>Health or science clubs.</li>
-            <li>Start tracking achievements.</li>
-        </ul>
-
-        <h2>10th Grade (Sophomore Year)</h2>
-        <h3>Goals</h3>
-        <ul>
-            <li>Build a strong academic base.</li>
-            <li>Begin early exposure to healthcare.</li>
-        </ul>
-        <h3>Academics</h3>
-        <ul>
-            <li>Chemistry.</li>
-            <li>Geometry or Algebra II.</li>
-        </ul>
-        <h3>Activities</h3>
-        <ul>
-            <li>Volunteer at hospitals (if allowed).</li>
-            <li>Attend medical webinars or workshops.</li>
-            <li>Explore neuroscience books and videos.</li>
-        </ul>
-
-        <h2>11th Grade (Junior Year)</h2>
-        <h3>Goals</h3>
-        <ul>
-            <li>Strengthen college profile.</li>
-            <li>Prepare for standardized tests.</li>
-        </ul>
-        <h3>Academics</h3>
-        <ul>
-            <li>AP Biology / AP Chemistry (if available).</li>
-            <li>Pre‑Calculus.</li>
-        </ul>
-        <h3>Activities</h3>
-        <ul>
-            <li>Shadow a doctor (if possible).</li>
-            <li>Research internships.</li>
-            <li>Leadership roles in clubs.</li>
-        </ul>
-        <h3>Exams</h3>
-        <ul>
-            <li>SAT / ACT.</li>
-        </ul>
-
-        <h2>12th Grade (Senior Year)</h2>
-        <h3>Goals</h3>
-        <ul>
-            <li>Finalize college applications.</li>
-            <li>Maintain strong grades.</li>
-        </ul>
-        <h3>Academics</h3>
-        <ul>
-            <li>AP Physics / AP Psychology (optional).</li>
-            <li>Advanced science electives.</li>
-        </ul>
-        <h3>Activities</h3>
-        <ul>
-            <li>Continue volunteering.</li>
-            <li>Write strong personal statements.</li>
-        </ul>
-
-        <h2>After 12th Grade: Two Path Options</h2>
-
-        <h3>Option A: Study in the United States (Pre‑Med → MD → Neurology)</h3>
-        <ol>
-            <li><strong>Bachelor’s Degree (4 years)</strong>
-                <ul>
-                    <li>Major: Biology, Neuroscience, Chemistry, etc.</li>
-                    <li>Activities: Research, volunteering, clinical exposure.</li>
-                </ul>
-            </li>
-            <li><strong>MCAT Exam</strong></li>
-            <li><strong>Medical School (4 years)</strong></li>
-            <li><strong>Neurology Residency (4 years)</strong></li>
-            <li><strong>Fellowship (1–3 years)</strong></li>
-        </ol>
-        <p><strong>Total time after 12th grade:</strong> 13–15 years.</p>
-
-        <h3>Option B: Study in India (MBBS → MD → DM Neurology)</h3>
-        <ol>
-            <li>NEET Exam.</li>
-            <li>MBBS (5.5 years).</li>
-            <li>MD (Medicine) – 3 years.</li>
-            <li>DM (Neurology) – 3 years.</li>
-        </ol>
-        <p><strong>Total time after 12th grade:</strong> 11–12 years.</p>
-
-        <h2>Final Stage: Neurologist</h2>
-        <h3>Career Options</h3>
-        <ul>
-            <li>Hospital neurologist.</li>
-            <li>Stroke specialist.</li>
-            <li>Epilepsy specialist.</li>
-            <li>Neurocritical care.</li>
-            <li>Movement disorders.</li>
-            <li>Academic medicine.</li>
-        </ul>
-
-        <h3>Skills Needed</h3>
-        <ul>
-            <li>Compassion.</li>
-            <li>Critical thinking.</li>
-            <li>Strong communication.</li>
-            <li>Lifelong learning.</li>
-        </ul>
-
-        <h2>Summary Timeline</h2>
-
-        <table>
-            <tr>
-                <th>Stage</th>
-                <th>Age</th>
-                <th>Milestone</th>
-            </tr>
-            <tr>
-                <td>8th Grade</td>
-                <td>13–14</td>
-                <td>Build foundation</td>
-            </tr>
-            <tr>
-                <td>9th Grade</td>
-                <td>14–15</td>
-                <td>Explore science</td>
-            </tr>
-            <tr>
-                <td>10th Grade</td>
-                <td>15–16</td>
-                <td>Early exposure</td>
-            </tr>
-            <tr>
-                <td>11th Grade</td>
-                <td>16–17</td>
-                <td>Testing + leadership</td>
-            </tr>
-            <tr>
-                <td>12th Grade</td>
-                <td>17–18</td>
-                <td>College applications</td>
-            </tr>
-            <tr>
-                <td>College / MBBS</td>
-                <td>18–23</td>
-                <td>Pre‑med or MBBS</td>
-            </tr>
-            <tr>
-                <td>Medical School / MD</td>
-                <td>23–27</td>
-                <td>Doctor training</td>
-            </tr>
-            <tr>
-                <td>Residency</td>
-                <td>27–31</td>
-                <td>Neurology training</td>
-            </tr>
-            <tr>
-                <td>Fellowship</td>
-                <td>31–33</td>
-                <td>Specialization</td>
-            </tr>
-            <tr>
-                <td>Neurologist</td>
-                <td>33+</td>
-                <td>Full career begins</td>
-            </tr>
-        </table>
-
-        <h2>Final Notes for Parents</h2>
-        <ul>
-            <li>Encourage curiosity and confidence.</li>
-            <li>Support consistent study habits.</li>
-            <li>Help the child explore healthcare early.</li>
-            <li>Keep long‑term goals flexible and positive.</li>
-        </ul>
-        <p>
-            This timeline gives a clear, structured view of the entire journey from middle school to a successful
-            neurology career.
-        </p>
-
     </div>
+</nav>
 
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
-        }
-    </script>
+<!-- HEADER -->
+<header>
+    <h1>Timeline: 8th Grade to Neurologist</h1>
+    <p>Simple roadmap from middle school to a neurology career.</p>
+</header>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>Overview</h2>
+<p>This timeline shows the full journey from 8th grade to becoming a neurologist.</p>
+
+<div class="timeline-section">
+<h2>8th Grade</h2>
+<ul>
+<li>Focus on science & math basics</li>
+<li>Build study habits</li>
+<li>Join clubs</li>
+</ul>
+</div>
+
+<div class="timeline-section">
+<h2>9th–10th Grade</h2>
+<ul>
+<li>Biology, Chemistry</li>
+<li>Science competitions</li>
+<li>Early volunteering</li>
+</ul>
+</div>
+
+<div class="timeline-section">
+<h2>11th–12th Grade</h2>
+<ul>
+<li>AP courses</li>
+<li>SAT/ACT</li>
+<li>Shadow doctors</li>
+</ul>
+</div>
+
+<div class="timeline-section">
+<h2>After High School</h2>
+<ul>
+<li>USA: Pre-med → MD → Residency</li>
+<li>India: NEET → MBBS → MD → DM</li>
+</ul>
+</div>
+
+<h2>Summary Timeline</h2>
+<table>
+<tr><th>Stage</th><th>Age</th><th>Milestone</th></tr>
+<tr><td>Middle School</td><td>13–14</td><td>Foundation</td></tr>
+<tr><td>High School</td><td>14–18</td><td>Preparation</td></tr>
+<tr><td>College / MBBS</td><td>18–23</td><td>Degree</td></tr>
+<tr><td>Medical Training</td><td>23–33</td><td>Specialization</td></tr>
+</table>
+
+</div>
+
+<!-- ✅ FIXED FOOTER -->
+<footer>
+<p>© 2026 Saanvi’s Future Neurologist Guide</p>
+<p>Created with dedication and love</p>
+</footer>
 
 </body>
 </html>
