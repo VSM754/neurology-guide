@@ -1,282 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Resources – Saanvi’s Future Neurologist Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Resources – Saanvi’s Future Neurologist Guide</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #333;
-            line-height: 1.6;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+    background: #f9f9fb;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
 
-        nav {
-            background: #ff6f91;
-            padding: 15px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            font-size: 18px;
-        }
+/* ✅ STICKY NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 111, 145, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
 
-        .dropbtn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background: white;
-            min-width: 240px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            z-index: 10;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    min-width: 240px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
-        .dropdown-content a {
-            color: #ff6f91;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-        }
+.dropdown-content a {
+    color: #ff6f91;
+    padding: 12px 18px;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background: #ffe3ea;
-        }
+.dropdown-content a:hover {
+    background: #fff0f4;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
 
-        header h1 {
-            color: #ff6f91;
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
+header h1 {
+    color: #ff6f91;
+    margin: 0;
+}
 
-        h2 {
-            color: #ff6f91;
-            margin-top: 30px;
-        }
+header p {
+    color: #6e6e73;
+}
 
-        h3 {
-            color: #ff6f91;
-            margin-top: 20px;
-        }
+/* CONTENT */
+.content {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+}
 
-        .content {
-            padding: 20px 40px;
-            max-width: 950px;
-            margin: auto;
-        }
+h2, h3 {
+    color: #ff6f91;
+}
 
-        ul {
-            margin-left: 20px;
-        }
+/* ✅ RESOURCE CARDS (IMPROVED) */
+.resource-box {
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    transition: 0.25s;
+}
 
-        .resource-box {
-            border: 2px solid #ffd1dc;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            background: #fff;
-        }
+.resource-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
 
-        .resource-box:hover {
-            border-color: #ff6f91;
-            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
+/* FOOTER */
+footer {
+    background: #ff6f91;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
 
-        a.resource-link {
-            color: #ff6f91;
-            font-weight: bold;
-            text-decoration: none;
-        }
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-        a.resource-link:hover {
-            text-decoration: underline;
-        }
+/* MOBILE */
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 20px;
+    }
+}
+</style>
 
-        @media (max-width: 600px) {
-            .content {
-                padding: 20px;
-            }
-        }
-    </style>
-
-    <link rel="manifest" href="manifest.json">
+<link rel="manifest" href="manifest.json">
 </head>
-<footer style="background:#ff6f91; color:white; padding:20px; text-align:center; margin-top:40px; border-radius:12px 12px 0 0;">
-    <p style="margin:5px 0; font-size:16px;">© 2026 Saanvi’s Future Neurologist Guide</p>
-    <p style="margin:5px 0; font-size:14px;">Created with dedication and love</p>
-    <p style="margin:10px 0;">
-        <a href="index.html" style="color:white; text-decoration:none; margin:0 10px;">Home</a>
-        <a href="resources.html" style="color:white; text-decoration:none; margin:0 10px;">Resources</a>
-      
-    </p>
-</footer>
+
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="index.html">Home</a>
+<!-- NAV -->
+<nav>
+    <a href="index.html">Home</a>
 
-        <div class="dropdown">
-            <button class="dropbtn">Chapters ▼</button>
-            <div class="dropdown-content">
-                <a href="high-school.html">High School Plan</a>
-                <a href="timeline.html">Timeline: 8th Grade → Neurologist</a>
-                <a href="immigration-comparison.html">Green Card vs No Green Card</a>
-                <a href="immigration-education.html">Immigration Impact on Education</a>
-                <a href="eamcet-registration.html">EAMCET Registration</a>
-                <a href="neet-registration.html">NEET Registration</a>
-                <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
-                <a href="us-premed-vs-mbbs.html">U.S. Pre‑Med vs India MBBS</a>
-                <a href="mbbs-to-usa-neurology.html">MBBS → Neurologist in USA</a>
-                <a href="resources.html">Student Resources</a>
-            </div>
+    <div class="dropdown">
+        <button class="dropbtn">Chapters ▼</button>
+        <div class="dropdown-content">
+            <a href="high-school.html">High School Plan</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="immigration-comparison.html">Green Card vs No Green Card</a>
+            <a href="immigration-education.html">Education Impact</a>
+            <a href="eamcet-registration.html">EAMCET</a>
+            <a href="neet-registration.html">NEET</a>
+            <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
+            <a href="us-premed-vs-mbbs.html">U.S. vs MBBS</a>
+            <a href="mbbs-to-usa-neurology.html">MBBS → USA</a>
+            <a href="resources.html">Resources</a>
         </div>
-    </nav>
-
-    <!-- HEADER -->
-    <header>
-        <h1>Student Resources</h1>
-        <p>Helpful tools, study materials, and planning support for future neurologists.</p>
-    </header>
-
-    <!-- CONTENT -->
-    <div class="content">
-
-        <h2>Study Resources</h2>
-
-        <div class="resource-box">
-            <h3>Biology & Chemistry Foundations</h3>
-            <ul>
-                <li>Khan Academy – Biology, Chemistry, Physics</li>
-                <li>CrashCourse – Anatomy & Physiology</li>
-                <li>Bozeman Science – AP Biology concepts</li>
-            </ul>
-        </div>
-
-        <div class="resource-box">
-            <h3>NEET Preparation</h3>
-            <ul>
-                <li>NCERT Biology (Class 11 & 12)</li>
-                <li>Allen / Aakash NEET modules</li>
-                <li>NEET previous year question papers</li>
-            </ul>
-        </div>
-
-        <div class="resource-box">
-            <h3>EAMCET Preparation</h3>
-            <ul>
-                <li>AP EAPCET official syllabus</li>
-                <li>Concept books for MPC/BiPC</li>
-                <li>Mock tests from coaching institutes</li>
-            </ul>
-        </div>
-
-        <h2>U.S. Pathway Resources</h2>
-
-        <div class="resource-box">
-            <h3>Pre‑Med Support</h3>
-            <ul>
-                <li>College Board – AP Biology, AP Chemistry</li>
-                <li>Coursera – Intro to Neuroscience courses</li>
-                <li>Local hospital volunteering programs</li>
-            </ul>
-        </div>
-
-        <div class="resource-box">
-            <h3>MCAT Preparation</h3>
-            <ul>
-                <li>Khan Academy MCAT videos</li>
-                <li>AAMC practice exams</li>
-                <li>Kaplan / Princeton Review MCAT books</li>
-            </ul>
-        </div>
-
-        <h2>Career Exploration</h2>
-
-        <div class="resource-box">
-            <h3>Neurology Learning</h3>
-            <ul>
-                <li>American Academy of Neurology (AAN)</li>
-                <li>Neuroscience News – beginner‑friendly articles</li>
-                <li>BrainFacts.org – interactive learning</li>
-            </ul>
-        </div>
-
-        <div class="resource-box">
-            <h3>Shadowing & Volunteering</h3>
-            <ul>
-                <li>Local hospitals and clinics</li>
-                <li>Red Cross volunteering</li>
-                <li>Community health events</li>
-            </ul>
-        </div>
-
-        <h2>Planning & Organization Tools</h2>
-
-        <div class="resource-box">
-            <h3>Academic Planning</h3>
-            <ul>
-                <li>Google Calendar – study scheduling</li>
-                <li>Notion – subject tracking</li>
-                <li>Microsoft OneNote – notes & revision</li>
-            </ul>
-        </div>
-
-        <div class="resource-box">
-            <h3>Exam Tracking</h3>
-            <ul>
-                <li>NEET official website</li>
-                <li>AP EAPCET official website</li>
-                <li>College Board – SAT/PSAT</li>
-            </ul>
-        </div>
-
-        <h2>Final Advice</h2>
-        <p>
-            Becoming a neurologist is a long journey, but with the right tools, planning, and consistent effort,
-            students can build a strong foundation from middle school through medical school.
-        </p>
-
     </div>
+</nav>
 
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
-        }
-    </script>
+<!-- HEADER -->
+<header>
+    <h1>Student Resources</h1>
+    <p>Helpful tools and study materials for future neurologists.</p>
+</header>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>Study Resources</h2>
+
+<div class="resource-box">
+<h3>Biology & Chemistry</h3>
+<ul>
+<li>Khan Academy</li>
+<li>CrashCourse</li>
+<li>Bozeman Biology</li>
+</ul>
+</div>
+
+<div class="resource-box">
+<h3>NEET Prep</h3>
+<ul>
+<li>NCERT</li>
+<li>Aakash / Allen</li>
+<li>Previous papers</li>
+</ul>
+</div>
+
+<div class="resource-box">
+<h3>EAMCET Prep</h3>
+<ul>
+<li>AP EAPCET syllabus</li>
+<li>Concept books</li>
+<li>Mock tests</li>
+</ul>
+</div>
+
+<h2>U.S. Path Resources</h2>
+
+<div class="resource-box">
+<h3>Pre‑Med</h3>
+<ul>
+<li>College Board</li>
+<li>Coursera neuroscience</li>
+<li>Hospital volunteering</li>
+</ul>
+</div>
+
+<div class="resource-box">
+<h3>MCAT</h3>
+<ul>
+<li>Khan Academy</li>
+<li>AAMC</li>
+<li>Kaplan / Princeton</li>
+</ul>
+</div>
+
+<h2>Career Exploration</h2>
+
+<div class="resource-box">
+<h3>Neurology</h3>
+<ul>
+<li>American Academy of Neurology</li>
+<li>BrainFacts.org</li>
+<li>Neuroscience News</li>
+</ul>
+</div>
+
+<h2>Tools</h2>
+
+<div class="resource-box">
+<h3>Planning</h3>
+<ul>
+<li>Google Calendar</li>
+<li>Notion</li>
+<li>OneNote</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ✅ FIXED FOOTER -->
+<footer>
+<p>© 2026 Saanvi’s Future Neurologist Guide</p>
+<p>Created with dedication and love</p>
+<p>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+</p>
+</footer>
+
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
 
 </body>
 </html>
