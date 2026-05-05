@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saanvi’s Future Neurologist Guide</title>
 
-    <!-- PINK/CORAL THEME -->
     <style>
         body {
             margin: 0;
-			padding: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
             background: #ffffff;
             color: #333;
@@ -18,7 +17,7 @@
         /* NAVIGATION BAR */
         nav {
             background: #ff6f91;
-            padding: 15px 25px;
+            padding: 10px 25px; /* reduced */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -32,7 +31,7 @@
             font-weight: bold;
         }
 
-        /* DROPDOWN MENU */
+        /* DROPDOWN */
         .dropdown {
             position: relative;
             display: inline-block;
@@ -76,16 +75,17 @@
         /* HEADER */
         header {
             text-align: center;
-            padding: 40px 20px;
+            padding: 15px 20px; /* reduced from 40px */
         }
 
         header h1 {
             color: #ff6f91;
             font-size: 36px;
+            margin-top: 0; /* removes gap */
             margin-bottom: 10px;
         }
 
-        /* CARD GRID */
+        /* GRID */
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -114,7 +114,7 @@
             font-size: 20px;
         }
 
-        /* MOBILE RESPONSIVE */
+        /* RESPONSIVE */
         @media (max-width: 900px) {
             .grid {
                 grid-template-columns: 1fr 1fr;
@@ -128,129 +128,108 @@
         }
     </style>
 
-    <!-- PWA -->
     <link rel="manifest" href="manifest.json">
 </head>
-<footer style="background:#ff6f91; color:white; padding:20px; text-align:center; margin-top:40px; border-radius:12px 12px 0 0;">
-    <p style="margin:5px 0; font-size:16px;">© 2026 Saanvi’s Future Neurologist Guide</p>
-    <p style="margin:5px 0; font-size:14px;">Created with dedication and love</p>
-    <p style="margin:10px 0;">
-        <a href="index.html" style="color:white; text-decoration:none; margin:0 10px;">Home</a>
-        <a href="resources.html" style="color:white; text-decoration:none; margin:0 10px;">Resources</a>
-    </p>
-</footer>
-<script>
-document.getElementById("searchBar").addEventListener("keyup", function() {
-    const query = this.value.toLowerCase();
-    const pages = [
-        "high-school.html",
-        "timeline.html",
-        "immigration-comparison.html",
-        "immigration-education.html",
-        "eamcet-registration.html",
-        "neet-registration.html",
-        "eamcet-vs-neet.html",
-        "us-premed-vs-mbbs.html",
-        "mbbs-to-usa-neurology.html",
-        "resources.html"
-    ];
-    for (let p of pages) {
-        if (p.includes(query)) {
-            window.location.href = p;
-            break;
-        }
-    }
-});
-</script>
+
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">Chapters ▼</button>
-            <div class="dropdown-content">
-                <a href="high-school.html">High School Plan</a>
-                <a href="timeline.html">Timeline: 8th Grade → Neurologist</a>
-                <a href="immigration-comparison.html">Green Card vs No Green Card</a>
-                <a href="immigration-education.html">Immigration Impact on Education</a>
-                <a href="eamcet-registration.html">EAMCET Registration</a>
-                <a href="neet-registration.html">NEET Registration</a>
-                <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
-                <a href="us-premed-vs-mbbs.html">U.S. Pre‑Med vs India MBBS</a>
-                <a href="mbbs-to-usa-neurology.html">MBBS → Neurologist in USA</a>
-                <a href="resources.html">Student Resources</a>
-            </div>
+<!-- NAV -->
+<nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Chapters ▼</button>
+        <div class="dropdown-content">
+            <a href="high-school.html">High School Plan</a>
+            <a href="timeline.html">Timeline: 8th Grade → Neurologist</a>
+            <a href="immigration-comparison.html">Green Card vs No Green Card</a>
+            <a href="immigration-education.html">Immigration Impact</a>
+            <a href="eamcet-registration.html">EAMCET Registration</a>
+            <a href="neet-registration.html">NEET Registration</a>
+            <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
+            <a href="us-premed-vs-mbbs.html">U.S. Pre‑Med vs MBBS</a>
+            <a href="mbbs-to-usa-neurology.html">MBBS → USA Neurologist</a>
+            <a href="resources.html">Student Resources</a>
         </div>
-    </nav>
-
-    <!-- HEADER -->
-    <header>
-        <h1>Saanvi’s Future Neurologist Guide</h1>
-        <p>A complete roadmap from high school to neurology — designed just for you.</p>
-    </header>
-
-    <!-- CARD GRID -->
-    <div class="grid">
-
-        <a class="card" href="high-school.html">
-            <h3>High School Plan</h3>
-            <p>Year‑by‑year roadmap for grades 9–12.</p>
-        </a>
-
-        <a class="card" href="timeline.html">
-            <h3>Timeline: 8th → Neurologist</h3>
-            <p>Full journey from middle school to specialization.</p>
-        </a>
-
-        <a class="card" href="immigration-comparison.html">
-            <h3>Green Card vs No Green Card</h3>
-            <p>How immigration status affects the neurology path.</p>
-        </a>
-
-        <a class="card" href="immigration-education.html">
-            <h3>Education Impact</h3>
-            <p>Tuition, scholarships, and medical school access.</p>
-        </a>
-
-        <a class="card" href="eamcet-registration.html">
-            <h3>EAMCET Registration</h3>
-            <p>Step‑by‑step guide for U.S. students.</p>
-        </a>
-
-        <a class="card" href="neet-registration.html">
-            <h3>NEET Registration</h3>
-            <p>Complete registration process for NEET.</p>
-        </a>
-
-        <a class="card" href="eamcet-vs-neet.html">
-            <h3>EAMCET vs NEET</h3>
-            <p>Which exam is right for your goals.</p>
-        </a>
-
-        <a class="card" href="us-premed-vs-mbbs.html">
-            <h3>U.S. Pre‑Med vs India MBBS</h3>
-            <p>Professional comparison of both pathways.</p>
-        </a>
-
-        <a class="card" href="mbbs-to-usa-neurology.html">
-            <h3>MBBS → Neurologist in USA</h3>
-            <p>Full roadmap for Indian MBBS students.</p>
-        </a>
-
-        <a class="card" href="resources.html">
-            <h3>Student Resources</h3>
-            <p>Tools, tips, and helpful links.</p>
-        </a>
-
     </div>
+</nav>
 
-    <!-- SERVICE WORKER -->
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
-        }
-    </script>
+<!-- HEADER -->
+<header>
+    <h1>Saanvi’s Future Neurologist Guide</h1>
+    <p>A complete roadmap from high school to neurology — designed just for you.</p>
+</header>
+
+<!-- GRID -->
+<div class="grid">
+
+    <a class="card" href="high-school.html">
+        <h3>High School Plan</h3>
+        <p>Year‑by‑year roadmap for grades 9–12.</p>
+    </a>
+
+    <a class="card" href="timeline.html">
+        <h3>Timeline: 8th → Neurologist</h3>
+        <p>Full journey from middle school to specialization.</p>
+    </a>
+
+    <a class="card" href="immigration-comparison.html">
+        <h3>Green Card vs No Green Card</h3>
+        <p>How status affects the path.</p>
+    </a>
+
+    <a class="card" href="immigration-education.html">
+        <h3>Education Impact</h3>
+        <p>Tuition & access differences.</p>
+    </a>
+
+    <a class="card" href="eamcet-registration.html">
+        <h3>EAMCET Registration</h3>
+        <p>Step‑by‑step guide.</p>
+    </a>
+
+    <a class="card" href="neet-registration.html">
+        <h3>NEET Registration</h3>
+        <p>Complete process.</p>
+    </a>
+
+    <a class="card" href="eamcet-vs-neet.html">
+        <h3>EAMCET vs NEET</h3>
+        <p>Compare both exams.</p>
+    </a>
+
+    <a class="card" href="us-premed-vs-mbbs.html">
+        <h3>U.S. vs India Path</h3>
+        <p>Pre‑med vs MBBS breakdown.</p>
+    </a>
+
+    <a class="card" href="mbbs-to-usa-neurology.html">
+        <h3>MBBS → USA</h3>
+        <p>Become a neurologist in the US.</p>
+    </a>
+
+    <a class="card" href="resources.html">
+        <h3>Resources</h3>
+        <p>Helpful tools & links.</p>
+    </a>
+
+</div>
+
+<!-- FOOTER -->
+<footer style="background:#ff6f91; color:white; padding:20px; text-align:center; margin-top:40px;">
+    <p style="margin:5px;">© 2026 Saanvi’s Future Neurologist Guide</p>
+    <p style="margin:5px;">Created with dedication and love</p>
+    <p>
+        <a href="index.html" style="color:white; margin:0 10px;">Home</a>
+        <a href="resources.html" style="color:white; margin:0 10px;">Resources</a>
+    </p>
+</footer>
+
+<!-- SERVICE WORKER -->
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
 
 </body>
 </html>
