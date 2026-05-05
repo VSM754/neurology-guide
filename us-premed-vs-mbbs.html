@@ -1,318 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U.S. Pre‑Med vs India MBBS – Saanvi’s Future Neurologist Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U.S. Pre‑Med vs India MBBS – Saanvi’s Future Neurologist Guide</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #333;
-            line-height: 1.6;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+    background: #f9f9fb;
+    color: #1d1d1f;
+}
 
-        nav {
-            background: #ff6f91;
-            padding: 15px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            font-size: 18px;
-        }
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255,111,145,0.95);
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
 
-        .dropbtn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+header h1 {
+    color: #ff6f91;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background: white;
-            min-width: 240px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            z-index: 10;
-        }
+/* CONTENT */
+.content {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+}
 
-        .dropdown-content a {
-            color: #ff6f91;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-        }
+/* TABLE */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
-        .dropdown-content a:hover {
-            background: #ffe3ea;
-        }
+th {
+    background: #ffe3ea;
+    padding: 12px;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+td {
+    padding: 12px;
+    border-top: 1px solid #eee;
+}
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* BUTTONS */
+.toggle-buttons {
+    text-align: center;
+    margin-bottom: 15px;
+}
 
-        header h1 {
-            color: #ff6f91;
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
+.toggle-buttons button {
+    background: #ff6f91;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-        h2 {
-            color: #ff6f91;
-            margin-top: 30px;
-        }
+/* HIGHLIGHTS */
+.active-us {
+    background: #e6f0ff;
+    font-weight: bold;
+}
 
-        h3 {
-            color: #ff6f91;
-            margin-top: 20px;
-        }
+.active-india {
+    background: #ffeaea;
+    font-weight: bold;
+}
 
-        .content {
-            padding: 20px 40px;
-            max-width: 950px;
-            margin: auto;
-        }
+/* FOOTER */
+footer {
+    background: #ff6f91;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
 
-        ul, ol {
-            margin-left: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        th, td {
-            border: 1px solid #ffd1dc;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background: #ffe3ea;
-            color: #ff6f91;
-        }
-
-        caption {
-            text-align: left;
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: #ff6f91;
-        }
-
-        @media (max-width: 600px) {
-            .content {
-                padding: 20px;
-            }
-        }
-    </style>
-
-    <link rel="manifest" href="manifest.json">
 </head>
-<footer style="background:#ff6f91; color:white; padding:20px; text-align:center; margin-top:40px; border-radius:12px 12px 0 0;">
-    <p style="margin:5px 0; font-size:16px;">© 2026 Saanvi’s Future Neurologist Guide</p>
-    <p style="margin:5px 0; font-size:14px;">Created with dedication and love</p>
-    <p style="margin:10px 0;">
-        <a href="index.html" style="color:white; text-decoration:none; margin:0 10px;">Home</a>
-        <a href="resources.html" style="color:white; text-decoration:none; margin:0 10px;">Resources</a>
-       
-    </p>
-</footer>
+
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="index.html">Home</a>
+<!-- NAV -->
+<nav>
+<a href="index.html">Home</a>
+<a href="resources.html">Resources</a>
+</nav>
 
-        <div class="dropdown">
-            <button class="dropbtn">Chapters ▼</button>
-            <div class="dropdown-content">
-                <a href="high-school.html">High School Plan</a>
-                <a href="timeline.html">Timeline: 8th Grade → Neurologist</a>
-                <a href="immigration-comparison.html">Green Card vs No Green Card</a>
-                <a href="immigration-education.html">Immigration Impact on Education</a>
-                <a href="eamcet-registration.html">EAMCET Registration</a>
-                <a href="neet-registration.html">NEET Registration</a>
-                <a href="eamcet-vs-neet.html">EAMCET vs NEET</a>
-                <a href="us-premed-vs-mbbs.html">U.S. Pre‑Med vs India MBBS</a>
-                <a href="mbbs-to-usa-neurology.html">MBBS → Neurologist in USA</a>
-                <a href="resources.html">Student Resources</a>
-            </div>
-        </div>
-    </nav>
+<!-- HEADER -->
+<header>
+<h1>U.S. Pre‑Med vs India MBBS</h1>
+<p>Compare pathways to becoming a neurologist</p>
+</header>
 
-    <!-- HEADER -->
-    <header>
-        <h1>U.S. Pre‑Med vs India MBBS</h1>
-        <p>A complete comparison to help families choose the right pathway to neurology.</p>
-    </header>
+<!-- CONTENT -->
+<div class="content">
 
-    <!-- CONTENT -->
-    <div class="content">
+<h2>Overview</h2>
+<p>
+Choose between two paths:
+</p>
+<ul>
+<li><strong>U.S.:</strong> Pre‑Med → MD → Residency</li>
+<li><strong>India:</strong> NEET → MBBS → MD → DM</li>
+</ul>
 
-        <h2>Overview</h2>
-        <p>
-            Students who want to become neurologists typically choose between two major pathways:
-        </p>
-        <ul>
-            <li><strong>U.S. Pathway:</strong> Pre‑Med → MCAT → MD → Neurology Residency</li>
-            <li><strong>India Pathway:</strong> NEET → MBBS → MD (Medicine) → DM (Neurology)</li>
-        </ul>
-        <p>
-            Both paths lead to becoming a neurologist, but they differ in cost, duration, competitiveness, and lifestyle.
-        </p>
+<h2>Interactive Comparison</h2>
 
-        <h2>Pathway Structure</h2>
+<div class="toggle-buttons">
+<button onclick="highlightPath('us')">🇺🇸 Highlight U.S.</button>
+<button onclick="highlightPath('india')">🇮🇳 Highlight India</button>
+<button onclick="highlightPath('none')">Reset</button>
+</div>
 
-        <h3>U.S. Pre‑Med Path</h3>
-        <ol>
-            <li>Bachelor’s Degree (4 years)</li>
-            <li>MCAT Exam</li>
-            <li>Medical School – MD (4 years)</li>
-            <li>Neurology Residency (4 years)</li>
-            <li>Fellowship (1–3 years)</li>
-        </ol>
+<table class="comparison-table">
 
-        <h3>India MBBS Path</h3>
-        <ol>
-            <li>NEET Exam</li>
-            <li>MBBS (5.5 years)</li>
-            <li>MD – Internal Medicine (3 years)</li>
-            <li>DM – Neurology (3 years)</li>
-        </ol>
+<tr>
+<th>Category</th>
+<th>🇺🇸 U.S.</th>
+<th>🇮🇳 India</th>
+</tr>
 
-        <h2>Duration Comparison</h2>
+<tr>
+<td>Entry Exam</td>
+<td class="us">MCAT</td>
+<td class="india">NEET</td>
+</tr>
 
-        <table>
-            <caption>Total Time to Become a Neurologist</caption>
-            <tr>
-                <th>Stage</th>
-                <th>U.S. Pathway</th>
-                <th>India Pathway</th>
-            </tr>
-            <tr>
-                <td>Undergraduate</td>
-                <td>4 years</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Medical School</td>
-                <td>4 years (MD)</td>
-                <td>5.5 years (MBBS)</td>
-            </tr>
-            <tr>
-                <td>Residency</td>
-                <td>4 years (Neurology)</td>
-                <td>3 years (MD)</td>
-            </tr>
-            <tr>
-                <td>Super‑Specialization</td>
-                <td>1–3 years (Fellowship)</td>
-                <td>3 years (DM Neurology)</td>
-            </tr>
-            <tr>
-                <td><strong>Total</strong></td>
-                <td><strong>13–15 years</strong></td>
-                <td><strong>11–12 years</strong></td>
-            </tr>
-        </table>
+<tr>
+<td>Start</td>
+<td class="us">After college</td>
+<td class="india">After 12th</td>
+</tr>
 
-        <h2>Cost Comparison</h2>
+<tr>
+<td>Duration</td>
+<td class="us">13–15 yrs</td>
+<td class="india">11–12 yrs</td>
+</tr>
 
-        <table>
-            <caption>Approximate Cost (Without Scholarships)</caption>
-            <tr>
-                <th>Category</th>
-                <th>U.S. Pathway</th>
-                <th>India Pathway</th>
-            </tr>
-            <tr>
-                <td>Undergraduate</td>
-                <td>$40,000–$200,000</td>
-                <td>Not required</td>
-            </tr>
-            <tr>
-                <td>Medical School</td>
-                <td>$150,000–$300,000</td>
-                <td>₹10–70 lakhs</td>
-            </tr>
-            <tr>
-                <td>Residency</td>
-                <td>Paid (salary ~$60k/year)</td>
-                <td>Paid (stipend)</td>
-            </tr>
-            <tr>
-                <td><strong>Total Cost</strong></td>
-                <td><strong>Very High</strong></td>
-                <td><strong>Moderate</strong></td>
-            </tr>
-        </table>
+<tr>
+<td>Cost</td>
+<td class="us">Very high</td>
+<td class="india">Moderate</td>
+</tr>
 
-        <h2>Competitiveness</h2>
+<tr>
+<td>Flexibility</td>
+<td class="us">High</td>
+<td class="india">Low</td>
+</tr>
 
-        <h3>U.S. Pathway</h3>
-        <ul>
-            <li>Medical school admissions are extremely competitive.</li>
-            <li>High GPA and MCAT score required.</li>
-            <li>Strong extracurriculars needed (research, volunteering, shadowing).</li>
-        </ul>
+<tr>
+<td>Global Opportunities</td>
+<td class="us">Very high</td>
+<td class="india">Moderate</td>
+</tr>
 
-        <h3>India Pathway</h3>
-        <ul>
-            <li>NEET is highly competitive due to limited seats.</li>
-            <li>Government MBBS seats are extremely difficult to secure.</li>
-            <li>Private colleges are easier but expensive.</li>
-        </ul>
+<tr>
+<td>Best For</td>
+<td class="us">Flexibility & global career</td>
+<td class="india">Faster & lower cost</td>
+</tr>
 
-        <h2>Lifestyle & Training Differences</h2>
+</table>
 
-        <h3>U.S. Pathway</h3>
-        <ul>
-            <li>More research‑focused.</li>
-            <li>Advanced technology and facilities.</li>
-            <li>Residency is structured and well‑paid.</li>
-            <li>High workload but excellent training quality.</li>
-        </ul>
+</div>
 
-        <h3>India Pathway</h3>
-        <ul>
-            <li>High patient volume → excellent clinical exposure.</li>
-            <li>Less research‑focused.</li>
-            <li>Residency workload is extremely high.</li>
-            <li>DM Neurology seats are very limited.</li>
-        </ul>
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Saanvi’s Future Neurologist Guide</p>
+</footer>
 
-        <h2>Which Path Is Better?</h2>
-        <p>
-            Both paths can lead to a successful neurology career. The best choice depends on:
-        </p>
-        <ul>
-            <li>Financial situation.</li>
-            <li>Immigration status (green card vs no green card).</li>
-            <li>Student’s academic strengths.</li>
-            <li>
+<!-- SCRIPT -->
+<script>
+function highlightPath(path) {
+    document.querySelectorAll(".us").forEach(el => el.classList.remove("active-us"));
+    document.querySelectorAll(".india").forEach(el => el.classList.remove("active-india"));
+
+    if (path === "us") {
+        document.querySelectorAll(".us").forEach(el => el.classList.add("active-us"));
+    }
+
+    if (path === "india") {
+        document.querySelectorAll(".india").forEach(el => el.classList.add("active-india"));
+    }
+}
+</script>
+
+</body>
+</html>
