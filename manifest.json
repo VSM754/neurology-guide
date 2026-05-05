@@ -1,9 +1,9 @@
 {
-  "name": "Neurology Career Guide",
+  "name": "Saanvi’s Future Neurologist Guide",
   "short_name": "Neurology Guide",
-  "start_url": "/neurology-guide/",
+  "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#ffe3e8",
+  "background_color": "#ffffff",
   "theme_color": "#ff6f91",
   "icons": [
     {
